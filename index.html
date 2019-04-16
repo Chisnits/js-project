@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="weather.js"></script>
+    <script src="config.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="weather__container">
+            <div class="search__container">
+                <div id="Reset" class="search__reset" onclick="getLocation()"><i class="fas fa-location-arrow"></i></div>
+                <div class="search__form">
+                    <input type="text" placeholder="Search" id="search_input">
+                    <input type="button" value="Submit" id="submit_btn" onclick="searchWeather()">
+                </div>
+            </div>
+            <div class="weather__card">
+                <h3 id="weather__currentLocation"></h3>
+                <p id="weather__currentDescription"></p>
+                <img id="weather__icon" src="" />
+                <p>Current Temperature: <span id="weather__currentTemp"></span>&#8457;</p>
+                <p>High: <span id="weather__currentHigh"></span>&#8457;</p>
+                <p>Low: <span id="weather__currentLow"></span>&#8457;</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
